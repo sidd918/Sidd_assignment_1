@@ -1,0 +1,148 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<title>Siddharth Chhabra's Website</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+
+    	<!-- Le styles -->
+    	<link href="/Users/sidd918/Documents/workspace/Task/bootstrap.css" rel="stylesheet">
+    	<link href="/Users/sidd918/Documents/workspace/Task/custom.css" rel="stylesheet">
+    	<style type="text/css">
+      		body {
+        	padding-top: 60px;
+        	padding-bottom: 40px;
+      		}
+    	</style>
+    	<!--<link href="Users/sidd918/Documents/workspace/Task/bootstrap-responsive.css" rel="stylesheet">-->
+
+    	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    	<!--[if lt IE 9]>
+     	<script src="assets/js/html5shiv.js"></script>
+    	<![endif]-->
+
+    	<!-- Fav and touch icons -->
+    	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+	</head>
+
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+     	 	<div class="navbar-inner">
+         		<div class="container">
+          			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+          			</button>
+          			<div class="nav-collapse collapse">
+           			<form class="navbar-form pull-right">
+              			<input class="span2" type="text" placeholder="Email" id="login_email">
+              			<input class="span2" type="password" placeholder="Password" id="login_pass">
+              			<button type="button" class="btn" onclick=login_test()>Sign in</button>
+            		</form>
+         			</div><!--/.nav-collapse -->
+       			 </div>
+      		</div>
+   		</div>
+    
+     <div class="container">
+
+    <!-- Main hero unit for a primary marketing message or call to action -->
+    <div class="hero-unit">
+    	<div class="row">
+			<div class="span5">
+        		<h1>Siddharth Chhabra</h1>
+				<p>BSIE 2013</p>
+				<p>PURDUE UNIVERSITY</p>
+        	</div>
+        	<div class="span5">
+				<a class="thumbnail">
+				<img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-prn1/263546_110248279069147_5161221_n.jpg"/>
+				</a>
+			</div>
+		</div>
+	</div>
+    
+    <div class="container">
+		<div class="row">
+			<div class="btn"> Hover!</div>			 
+				<div class="span8">
+					<h3>Professional Experience</h2>
+				</div>
+		</div>
+		<div class="span8">
+			<h4>Razer (Asia-Pacific PTE LTD)</h4>
+			<h5>Product Development Intern</h5>
+			<ul>
+				<li>PROJECT: Measure latency in devices through either the combination of software and hardware or by using high-speed cameras</li>
+				<li>Worked on developing new Razer controllers and mice and tested them to provide improvements</li>
+				<li>Worked on developing new Razer controllers and mice and tested them to provide improvements</li>
+				<li>Provided solutions to various ergonomic problems in devices
+			</ul>
+		</div>
+		<div class="span8">
+			<h4>Toyota Boshoku America</h4>
+			<h5>Senior Design Project</h5>
+			<ul>
+				<li>PROJECT: Analyze current production process and identify high risk ergonomic positions on the front seat assembly line</li>
+				<li>Provided solutions to injury prone tasks and did a thorough ergonomic analysis using JACK (led to <b>40%</b> decrease in injuries to back and shoulders)</li>
+				<li>Evaluated solutions with respect to feasibility, cost effectiveness, alleviating ergonomic exposure, keeping takt time requirements, and having a minimal learning curve</li>
+			</ul>
+		</div>
+		<div class="span8">
+			<h4>Amtek Auto Limited</h4>
+			<h5>Intern</h5>
+			<ul>
+				<li>PROJECT: Led a group of three interns to increase efficiency of a machine line that manufactures connecting rods (<b>9.3%</b> increase in productivity)</li>
+				<li>Identified bottlenecks to improve process flow and implemented Just-in-Time to optimize inventory</li>
+				<li>Identified and supported production quality processes and procedures to increase production throughput and eliminate customer dissatisfaction</li>
+				<li>Attended training programs on lean manufacturing, Kaizen, Kanban, Just-in-Time, and Six Sigma</li>
+			</ul>
+		</div>
+		<div class="span8">
+			<h4> Don't You Worry Child!</h4>
+			<iframe width="560" height="315" src="http://www.youtube.com/embed/1y6smkh6c-0" frameborder="0" allowfullscreen></iframe>
+		</div>	
+		<div class="span8">
+			<h4> </h4>
+			<p> Click the button below to contact me</p>
+			<div class="btn" onclick=test()>Contact</div>
+		</div>
+	</div>  
+
+      <hr>
+
+      <footer>
+        <p>&copy; Siddharth Chhabra 2013</p>
+      </footer>
+	
+	<!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-1.9.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+		function test(){
+			var name=prompt("What is your name?");
+			alert("Nice to meet you " + name);
+		}
+	</script>
+	<script>
+		function login_test(){
+			var email = document.getElementById('login_email').value;
+			var pass = document.getElementById('login_pass').value;	
+			if((email=="a")&(pass=="a"))
+			{alert("Success!")}
+			else {alert("Fail!")}
+			console.log("email:"+email+" pass:" + pass);
+		}
+	</script>
+	
+	</body>
+</html>
